@@ -19,15 +19,16 @@
   - Индикатор загрузки данных, на всех экранах
  
  ## Что использовалось
-  - Сервис данных о героях - https://jsonplaceholder.typecode.com
+  - Сервис данных - https://jsonplaceholder.typecode.com
   - MVP (+Router - для навигации, +Configurator - для сборки модулей)
   - Adapters - для построения TableView и разгрузки ViewController(ов)
+  - UIKit, Foundation
  
  ## Структура проекта
   - Application - запуск приложения
-  - Modules - экраны (UsersListViewController, AlbumsListViewController, PhotosViewController)
+  - Modules - экраны (UsersListViewController, AlbumsListViewController, PhotosViewController), Configurator, Router
   - Library - содержит extentions, customViews, assets и constants (в группе CustomViews находятся все кастомные ячейки для tableView всех экранов, а также CardView (тени для ячеек с фотографиями))
-  - Model - модели данных (не разделял на entity/entry)
+  - Model - модели данных (не разделённые на entity/entry)
   - Services - Сервисный слой, работа с запросами в интернет
   
   ## Как собрать проект
@@ -52,13 +53,14 @@ The repository contains an application for viewing user photos.
   - Data loading indicator, on all screens
  
  ## What was used
-  - Hero data service - https://jsonplaceholder.typecode.com
+  - Data service - https://jsonplaceholder.typecode.com
   - MVP (+Router - for navigation, +Configurator - for building modules)
   - Adapters - for building TableView and unloading ViewController(s)
+  - UIKit, Foundation
  
  ## Project structure
   - Application - application launch
-  - Modules - screens (UsersListViewController, AlbumsListViewController, PhotosViewController)
+  - Modules - screens (UsersListViewController, AlbumsListViewController, PhotosViewController), Configurator, Router
   - Library - contains extentions, customViews, assets and constants (the CustomViews group contains all custom cells for tableView of all screens, as well as CardView (shadows for cells with photos))
   - Model - data models (not divided into entity/entry)
   - Services - Service layer, working with Internet requests
