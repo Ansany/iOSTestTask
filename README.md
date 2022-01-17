@@ -26,7 +26,7 @@
  ## Структура проекта
   - Application - запуск приложения
   - Modules - экраны (UsersListViewController, AlbumsListViewController, PhotosViewController)
-  - Library - содержит extentions, customViews и assets (в группе CustomViews находятся все кастомные ячейки для tableView всех экранов, а также CardView (тени для ячеек с фотографиями))
+  - Library - содержит extentions, customViews, assets и constants (в группе CustomViews находятся все кастомные ячейки для tableView всех экранов, а также CardView (тени для ячеек с фотографиями))
   - Model - модели данных (не разделял на entity/entry)
   - Services - Сервисный слой, работа с запросами в интернет
   
@@ -59,7 +59,7 @@ The repository contains an application for viewing user photos.
  ## Project structure
   - Application - application launch
   - Modules - screens (UsersListViewController, AlbumsListViewController, PhotosViewController)
-  - Library - contains extentions, customViews and assets (the CustomViews group contains all custom cells for tableView of all screens, as well as CardView (shadows for cells with photos))
+  - Library - contains extentions, customViews, assets and constants (the CustomViews group contains all custom cells for tableView of all screens, as well as CardView (shadows for cells with photos))
   - Model - data models (not divided into entity/entry)
   - Services - Service layer, working with Internet requests
   
