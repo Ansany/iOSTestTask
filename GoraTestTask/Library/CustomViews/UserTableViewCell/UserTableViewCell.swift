@@ -14,8 +14,8 @@ class UserTableViewCell: UITableViewCell {
     //MARK: - IBOutlets
     @IBOutlet weak var userNameLabel: UILabel!
     
-    //MARK: - Configure cell
-    func configure(with user: User?){
+    //MARK: - Public methods
+    public func configure(with user: User?){
         userNameLabel.text = user?.name
     }
 }

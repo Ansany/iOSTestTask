@@ -1,5 +1,5 @@
 //
-//  ULTableViewAdapter.swift
+//  PhotosTableViewAdapter.swift
 //  GoraTestTask
 //
 //  Created by Andrey Alymov on 17.01.2022.
@@ -7,14 +7,14 @@
 
 import UIKit
 
-final class ULTableViewAdapter: NSObject {
+final class PhotosTableViewAdapter: NSObject {
     
     //MARK: - Properties
     private var tableView: UITableView
-    var presenter: ULViewPresenterProtocol!
+    var presenter: PhotosViewPresenterProtocol?
     
     //MARK: - Initializator
-    init(tableView: UITableView, presenter: ULViewPresenterProtocol) {
+    init(tableView: UITableView, presenter: PhotosViewPresenterProtocol?) {
         self.tableView = tableView
         self.presenter = presenter
         super.init()
@@ -25,31 +25,29 @@ final class ULTableViewAdapter: NSObject {
     func setupTableView() {
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.rowHeight = Constants.UI.userCellsHeight
-        tableView.register(UINib(nibName: UserTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: UserTableViewCell.identifier)
+        tableView.rowHeight = Constants.UI.photosCellsHeight
+        tableView.register(UINib(nibName: PhotoTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: PhotoTableViewCell.identifier)
     }
 }
 
 //MARK: - UITableViewDataSource
-extension ULTableViewAdapter: UITableViewDataSource {
+extension PhotosTableViewAdapter: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return presenter.users?.count ?? 0
+        return presenter?.photos?.count ?? 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: UserTableViewCell.identifier, for: indexPath) as! UserTableViewCell
-        let user = presenter.users?[indexPath.row]
-        cell.configure(with: user)
+        let cell = tableView.dequeueReusableCell(withIdentifier: PhotoTableViewCell.identifier, for: indexPath) as! PhotoTableViewCell
+        let photos = presenter?.photos?[indexPath.row]
+        cell.configurePhotoCell(with: photos)
         return cell
     }
 }
 
 //MARK: - UITableViewDelegate
-extension ULTableViewAdapter: UITableViewDelegate {
+extension PhotosTableViewAdapter: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let id = presenter?.users?[indexPath.row].id else { return }
-        presenter?.tapOnUser(with: id)
         tableView.deselectRow(at: indexPath, animated: false)
     }
 }

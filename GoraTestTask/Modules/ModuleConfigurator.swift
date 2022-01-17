@@ -17,5 +17,23 @@ final class ModuleConfigurator {
 
         return view
     }
+    
+    func configureAlbumsModule(fromUID userID: Int, with router: RouterProtocol?) -> UIViewController? {
+        let view = AlbumsListViewController()
+        let networkService = NetworkService()
+        let presenter = AlbumsListPresenter(userID: userID, view: view, networkService: networkService, router: router)
+        view.presenter = presenter
+        
+        return view
+    }
+    
+    func configurePhotosModule(fromAID albumId: Int, with router: RouterProtocol?) -> UIViewController? {
+        let view = PhotosViewController()
+        let networkService = NetworkService()
+        let presenter = PhotosPresenter(albumId: albumId, view: view, networkService: networkService, router: router)
+        view.presenter = presenter
+        
+        return view
+    }
 }
 

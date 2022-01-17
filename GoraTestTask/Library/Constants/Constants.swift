@@ -20,10 +20,13 @@ struct Constants {
     
     enum UI {
         static let userCellsHeight: CGFloat = 55
+        static let albumsCellsHeight: CGFloat = 60
+        static let photosCellsHeight: CGFloat = 370
     }
     
     enum DataLinks {
-        static let baseURL = URL(string: "https://jsonplaceholder.typicode.com/")
-        static let usersURL = URL(string: "https://jsonplaceholder.typicode.com/users")
+        static let baseURL = "https://jsonplaceholder.typicode.com/"
+        static let usersURL = "https://jsonplaceholder.typicode.com/users/"
+        static let photosURL = "https://jsonplaceholder.typicode.com/albums/"
     }
 }

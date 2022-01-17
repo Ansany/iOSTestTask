@@ -12,5 +12,5 @@ protocol ULViewPresenterProtocol: AnyObject {
     init(view: ULViewProtocol, networkService: NetworkServiceProtocol, router: RouterProtocol)
     func getUsers()
     var users: [User]? { get set }
-    func tapOnUser(user: User?)
+    func tapOnUser(with userID: Int)
 }

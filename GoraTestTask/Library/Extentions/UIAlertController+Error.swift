@@ -15,8 +15,8 @@ extension UIAlertController {
         let reloadAction = UIAlertAction(title: actionTitle, style: .default, handler: actionH)
         let cancelAction = UIAlertAction(title: cancelTitlte, style: .destructive, handler: cancelH)
         
-        alertController.addAction(cancelAction)
         alertController.addAction(reloadAction)
+        alertController.addAction(cancelAction)
         
         return alertController
     }

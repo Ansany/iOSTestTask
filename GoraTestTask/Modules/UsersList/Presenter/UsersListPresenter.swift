@@ -23,15 +23,17 @@ final class UsersListPresenter: ULViewPresenterProtocol {
         getUsers()
     }
     
-    //MARK: - Fetching data from jsonplaceholder.typicode.com
-    func getUsers() {
+    //MARK: - Public methods
+    
+    // Fetching users from jsonplaceholder.typicode.com
+    public func getUsers() {
         networkService.getUsers { [ weak self ] result in
             guard let self = self else { return }
             DispatchQueue.main.async {
                 switch result {
                 case.success(let users):
                     self.users = users
-                    self.view?.succes()
+                    self.view?.success()
                 case.failure(let error):
                     self.view?.failure(error: error)
                 }
@@ -40,8 +42,8 @@ final class UsersListPresenter: ULViewPresenterProtocol {
     }
     
     //MARK: - User's actions
-    func tapOnUser(user: User?) {
-        print("User was tapped")
+    public func tapOnUser(with userID: Int) {
+        router?.showAlbumsVC(with: userID)
     }
     
 }

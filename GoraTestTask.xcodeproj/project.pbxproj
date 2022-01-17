@@ -23,6 +23,27 @@
 		0402FBBE2794C3370061605B /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402FBBC2794C3370061605B /* UserTableViewCell.swift */; };
 		0402FBBF2794C3370061605B /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0402FBBD2794C3370061605B /* UserTableViewCell.xib */; };
 		0402FBC12794CFDC0061605B /* UIAlertController+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402FBC02794CFDC0061605B /* UIAlertController+Error.swift */; };
+		0402FBC42794DD0D0061605B /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402FBC32794DD0D0061605B /* UIView+Ext.swift */; };
+		0402FBC92794DDB70061605B /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402FBC82794DDB70061605B /* CardView.swift */; };
+		0402FBCC2794E20B0061605B /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402FBCA2794E20B0061605B /* PhotosViewController.swift */; };
+		0402FBCD2794E20B0061605B /* PhotosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0402FBCB2794E20B0061605B /* PhotosViewController.xib */; };
+		0402FBCF2794E21F0061605B /* PhotosPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402FBCE2794E21F0061605B /* PhotosPresenter.swift */; };
+		0402FBD12794E22E0061605B /* PhotosViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402FBD02794E22E0061605B /* PhotosViewProtocol.swift */; };
+		0402FBD32794E23A0061605B /* PhotosViewPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402FBD22794E23A0061605B /* PhotosViewPresenterProtocol.swift */; };
+		0402FBD72794EC2A0061605B /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402FBD52794EC2A0061605B /* PhotoTableViewCell.swift */; };
+		0402FBD82794EC2A0061605B /* PhotoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0402FBD62794EC2A0061605B /* PhotoTableViewCell.xib */; };
+		0402FBE62794FE020061605B /* AlbumsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402FBE42794FE020061605B /* AlbumsListViewController.swift */; };
+		0402FBE72794FE020061605B /* AlbumsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0402FBE52794FE020061605B /* AlbumsListViewController.xib */; };
+		0402FBE92794FE180061605B /* AlbumsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402FBE82794FE180061605B /* AlbumsListPresenter.swift */; };
+		0402FBEB2794FE270061605B /* ALViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402FBEA2794FE270061605B /* ALViewProtocol.swift */; };
+		0402FBED2794FE3A0061605B /* ALViewPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402FBEC2794FE3A0061605B /* ALViewPresenterProtocol.swift */; };
+		0402FBEF279501750061605B /* ALTableViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402FBEE279501750061605B /* ALTableViewAdapter.swift */; };
+		0402FBF3279503A90061605B /* AlbumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402FBF1279503A90061605B /* AlbumTableViewCell.swift */; };
+		0402FBF4279503A90061605B /* AlbumTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0402FBF2279503A90061605B /* AlbumTableViewCell.xib */; };
+		0414B57A2795241400BF2E6E /* PhotosTableViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0414B5792795241400BF2E6E /* PhotosTableViewAdapter.swift */; };
+		0414B57C2795443300BF2E6E /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0414B57B2795443300BF2E6E /* NetworkServiceProtocol.swift */; };
+		0414B57F2795472D00BF2E6E /* RouterMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0414B57E2795472D00BF2E6E /* RouterMain.swift */; };
+		0414B5812795474700BF2E6E /* RouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0414B5802795474700BF2E6E /* RouterProtocol.swift */; };
 		04F5D2402794A717009B1C92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5D23F2794A717009B1C92 /* AppDelegate.swift */; };
 		04F5D2422794A717009B1C92 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5D2412794A717009B1C92 /* SceneDelegate.swift */; };
 		04F5D2472794A717009B1C92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F5D2452794A717009B1C92 /* Main.storyboard */; };
@@ -67,6 +88,27 @@
 		0402FBBC2794C3370061605B /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		0402FBBD2794C3370061605B /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
 		0402FBC02794CFDC0061605B /* UIAlertController+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Error.swift"; sourceTree = "<group>"; };
+		0402FBC32794DD0D0061605B /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		0402FBC82794DDB70061605B /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		0402FBCA2794E20B0061605B /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		0402FBCB2794E20B0061605B /* PhotosViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotosViewController.xib; sourceTree = "<group>"; };
+		0402FBCE2794E21F0061605B /* PhotosPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosPresenter.swift; sourceTree = "<group>"; };
+		0402FBD02794E22E0061605B /* PhotosViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewProtocol.swift; sourceTree = "<group>"; };
+		0402FBD22794E23A0061605B /* PhotosViewPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewPresenterProtocol.swift; sourceTree = "<group>"; };
+		0402FBD52794EC2A0061605B /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
+		0402FBD62794EC2A0061605B /* PhotoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoTableViewCell.xib; sourceTree = "<group>"; };
+		0402FBE42794FE020061605B /* AlbumsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsListViewController.swift; sourceTree = "<group>"; };
+		0402FBE52794FE020061605B /* AlbumsListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumsListViewController.xib; sourceTree = "<group>"; };
+		0402FBE82794FE180061605B /* AlbumsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsListPresenter.swift; sourceTree = "<group>"; };
+		0402FBEA2794FE270061605B /* ALViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALViewProtocol.swift; sourceTree = "<group>"; };
+		0402FBEC2794FE3A0061605B /* ALViewPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALViewPresenterProtocol.swift; sourceTree = "<group>"; };
+		0402FBEE279501750061605B /* ALTableViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALTableViewAdapter.swift; sourceTree = "<group>"; };
+		0402FBF1279503A90061605B /* AlbumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTableViewCell.swift; sourceTree = "<group>"; };
+		0402FBF2279503A90061605B /* AlbumTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumTableViewCell.xib; sourceTree = "<group>"; };
+		0414B5792795241400BF2E6E /* PhotosTableViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosTableViewAdapter.swift; sourceTree = "<group>"; };
+		0414B57B2795443300BF2E6E /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
+		0414B57E2795472D00BF2E6E /* RouterMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterMain.swift; sourceTree = "<group>"; };
+		0414B5802795474700BF2E6E /* RouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterProtocol.swift; sourceTree = "<group>"; };
 		04F5D23C2794A717009B1C92 /* GoraTestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoraTestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F5D23F2794A717009B1C92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04F5D2412794A717009B1C92 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,10 +151,11 @@
 		0402FB932794A7740061605B /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				0402FB9F2794A90A0061605B /* Router.swift */,
+				0414B57D2795471400BF2E6E /* Router */,
 				0402FBA12794A9170061605B /* ModuleConfigurator.swift */,
-				0402FB9A2794A8B60061605B /* Photos */,
 				0402FB992794A8870061605B /* UsersList */,
+				0402FBD92794FC7D0061605B /* Albums */,
+				0402FB9A2794A8B60061605B /* Photos */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -131,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				0402FBB22794B6EC0061605B /* NetworkService.swift */,
+				0414B57B2795443300BF2E6E /* NetworkServiceProtocol.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -160,8 +204,8 @@
 		0402FB992794A8870061605B /* UsersList */ = {
 			isa = PBXGroup;
 			children = (
-				0402FB9C2794A8EB0061605B /* View */,
 				0402FB9B2794A8E20061605B /* Presenter */,
+				0402FB9C2794A8EB0061605B /* View */,
 			);
 			path = UsersList;
 			sourceTree = "<group>";
@@ -198,6 +242,9 @@
 		0402FB9D2794A8FB0061605B /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				0402FBCE2794E21F0061605B /* PhotosPresenter.swift */,
+				0402FBD02794E22E0061605B /* PhotosViewProtocol.swift */,
+				0402FBD22794E23A0061605B /* PhotosViewPresenterProtocol.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -205,6 +252,9 @@
 		0402FB9E2794A8FB0061605B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0402FBCA2794E20B0061605B /* PhotosViewController.swift */,
+				0402FBCB2794E20B0061605B /* PhotosViewController.xib */,
+				0414B5792795241400BF2E6E /* PhotosTableViewAdapter.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -212,8 +262,10 @@
 		0402FBA72794B07E0061605B /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
-				0402FBBC2794C3370061605B /* UserTableViewCell.swift */,
-				0402FBBD2794C3370061605B /* UserTableViewCell.xib */,
+				0402FBF02795038A0061605B /* AlbumTableViewCell */,
+				0402FBC22794D9F00061605B /* UserTableViewCell */,
+				0402FBD42794EC0A0061605B /* PhotoTableViewCell */,
+				0402FBC52794DD750061605B /* CardView */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -222,6 +274,7 @@
 			isa = PBXGroup;
 			children = (
 				0402FBC02794CFDC0061605B /* UIAlertController+Error.swift */,
+				0402FBC32794DD0D0061605B /* UIView+Ext.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -232,6 +285,80 @@
 				0402FBB02794B1B90061605B /* Constants.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		0402FBC22794D9F00061605B /* UserTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				0402FBBC2794C3370061605B /* UserTableViewCell.swift */,
+				0402FBBD2794C3370061605B /* UserTableViewCell.xib */,
+			);
+			path = UserTableViewCell;
+			sourceTree = "<group>";
+		};
+		0402FBC52794DD750061605B /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				0402FBC82794DDB70061605B /* CardView.swift */,
+			);
+			path = CardView;
+			sourceTree = "<group>";
+		};
+		0402FBD42794EC0A0061605B /* PhotoTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				0402FBD52794EC2A0061605B /* PhotoTableViewCell.swift */,
+				0402FBD62794EC2A0061605B /* PhotoTableViewCell.xib */,
+			);
+			path = PhotoTableViewCell;
+			sourceTree = "<group>";
+		};
+		0402FBD92794FC7D0061605B /* Albums */ = {
+			isa = PBXGroup;
+			children = (
+				0402FBE32794FDC60061605B /* Presenter */,
+				0402FBE22794FDB30061605B /* View */,
+			);
+			path = Albums;
+			sourceTree = "<group>";
+		};
+		0402FBE22794FDB30061605B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0402FBE42794FE020061605B /* AlbumsListViewController.swift */,
+				0402FBE52794FE020061605B /* AlbumsListViewController.xib */,
+				0402FBEE279501750061605B /* ALTableViewAdapter.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0402FBE32794FDC60061605B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				0402FBE82794FE180061605B /* AlbumsListPresenter.swift */,
+				0402FBEA2794FE270061605B /* ALViewProtocol.swift */,
+				0402FBEC2794FE3A0061605B /* ALViewPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		0402FBF02795038A0061605B /* AlbumTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				0402FBF1279503A90061605B /* AlbumTableViewCell.swift */,
+				0402FBF2279503A90061605B /* AlbumTableViewCell.xib */,
+			);
+			path = AlbumTableViewCell;
+			sourceTree = "<group>";
+		};
+		0414B57D2795471400BF2E6E /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				0402FB9F2794A90A0061605B /* Router.swift */,
+				0414B57E2795472D00BF2E6E /* RouterMain.swift */,
+				0414B5802795474700BF2E6E /* RouterProtocol.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		04F5D2332794A717009B1C92 = {
@@ -258,10 +385,10 @@
 			isa = PBXGroup;
 			children = (
 				0402FB932794A7740061605B /* Modules */,
+				0402FB952794A7FF0061605B /* Services */,
 				0402FB942794A7910061605B /* Model */,
 				0402FB982794A8590061605B /* Application */,
 				0402FB962794A84C0061605B /* Library */,
-				0402FB952794A7FF0061605B /* Services */,
 				04F5D24D2794A719009B1C92 /* Info.plist */,
 			);
 			path = GoraTestTask;
@@ -391,8 +518,12 @@
 				04F5D24C2794A719009B1C92 /* LaunchScreen.storyboard in Resources */,
 				0402FBA62794A9690061605B /* UsersListViewController.xib in Resources */,
 				04F5D2492794A719009B1C92 /* Assets.xcassets in Resources */,
+				0402FBCD2794E20B0061605B /* PhotosViewController.xib in Resources */,
+				0402FBE72794FE020061605B /* AlbumsListViewController.xib in Resources */,
+				0402FBF4279503A90061605B /* AlbumTableViewCell.xib in Resources */,
 				04F5D2472794A717009B1C92 /* Main.storyboard in Resources */,
 				0402FBBF2794C3370061605B /* UserTableViewCell.xib in Resources */,
+				0402FBD82794EC2A0061605B /* PhotoTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,17 +549,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				0402FBBB2794C20C0061605B /* ULTableViewAdapter.swift in Sources */,
+				0402FBCC2794E20B0061605B /* PhotosViewController.swift in Sources */,
+				0402FBD72794EC2A0061605B /* PhotoTableViewCell.swift in Sources */,
 				0402FBB32794B6EC0061605B /* NetworkService.swift in Sources */,
+				0402FBD12794E22E0061605B /* PhotosViewProtocol.swift in Sources */,
 				0402FBAE2794B12D0061605B /* Photo.swift in Sources */,
 				0402FBA22794A9170061605B /* ModuleConfigurator.swift in Sources */,
+				0402FBE92794FE180061605B /* AlbumsListPresenter.swift in Sources */,
 				0402FBBE2794C3370061605B /* UserTableViewCell.swift in Sources */,
 				04F5D2402794A717009B1C92 /* AppDelegate.swift in Sources */,
 				0402FBAA2794B0B40061605B /* User.swift in Sources */,
+				0402FBC42794DD0D0061605B /* UIView+Ext.swift in Sources */,
+				0402FBF3279503A90061605B /* AlbumTableViewCell.swift in Sources */,
+				0402FBD32794E23A0061605B /* PhotosViewPresenterProtocol.swift in Sources */,
 				0402FBC12794CFDC0061605B /* UIAlertController+Error.swift in Sources */,
 				0402FBA52794A9690061605B /* UsersListViewController.swift in Sources */,
+				0402FBC92794DDB70061605B /* CardView.swift in Sources */,
+				0414B57F2795472D00BF2E6E /* RouterMain.swift in Sources */,
 				0402FBA02794A90A0061605B /* Router.swift in Sources */,
+				0402FBE62794FE020061605B /* AlbumsListViewController.swift in Sources */,
+				0402FBCF2794E21F0061605B /* PhotosPresenter.swift in Sources */,
+				0414B5812795474700BF2E6E /* RouterProtocol.swift in Sources */,
+				0402FBEB2794FE270061605B /* ALViewProtocol.swift in Sources */,
+				0402FBEF279501750061605B /* ALTableViewAdapter.swift in Sources */,
+				0414B57A2795241400BF2E6E /* PhotosTableViewAdapter.swift in Sources */,
 				0402FBAC2794B1040061605B /* Album.swift in Sources */,
+				0402FBED2794FE3A0061605B /* ALViewPresenterProtocol.swift in Sources */,
 				04F5D2422794A717009B1C92 /* SceneDelegate.swift in Sources */,
+				0414B57C2795443300BF2E6E /* NetworkServiceProtocol.swift in Sources */,
 				0402FBB72794BA770061605B /* ULViewProtocol.swift in Sources */,
 				0402FBB12794B1B90061605B /* Constants.swift in Sources */,
 				0402FBB52794BA5F0061605B /* UsersListPresenter.swift in Sources */,
